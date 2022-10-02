@@ -83,6 +83,8 @@ public class ControllerProducto {
         this.vista.getBtnLimpiarBP().addActionListener(l -> limpiarbuscador());
         this.vista.getBtnBuscar().addActionListener(l -> buscarproducto());
         this.vista.getCriterio().addActionListener(l -> buscarproducto());
+        this.vista.getBtnreporteGenPRO().addActionListener(l->reporteGeneral());
+        this.vista.getBtnreporteInpRO().addActionListener(l->reporteIndividual());
     }
 
     /*GUARDAR PERSONA*/

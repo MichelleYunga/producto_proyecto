@@ -89,6 +89,8 @@ public class ControllerUsuario {
         this.vista.getBtnLimpiarBU().addActionListener(l -> limpiarbuscador());
         this.vista.getBtnBuscar().addActionListener(l -> buscarusuario());
         this.vista.getCriterioU().addActionListener(l -> buscarusuario());
+        this.vista.getBtnreporteGenUS().addActionListener(l->reporteGeneral());
+        this.vista.getBtnreporteInpUS().addActionListener(l->reporteIndividual());
     }
     
     

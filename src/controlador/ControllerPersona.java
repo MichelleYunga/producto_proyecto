@@ -79,6 +79,8 @@ public class ControllerPersona {
         this.vista.getBtnLimpiarB().addActionListener(l -> limpiarbuscador());
         this.vista.getBtnBuscar().addActionListener(l -> buscarpersona());
         this.vista.getCriterio().addActionListener(l -> buscarpersona());
+        this.vista.getBtnreporteGen().addActionListener(l->reporteGeneral());
+        this.vista.getBtnreporteIn().addActionListener(l->reporteIndividual());
     }
 
     /*GUARDAR PERSONA*/
@@ -197,14 +199,15 @@ public class ControllerPersona {
     }
     
 
-     public void reporteIndividual(){
+   public void reporteIndividual(){
     if(persona!=null){
     Map parameters =new  HashMap ();
     parameters.put("id",persona.getIdpersona());
-    Resouces.imprimirReeporte(ManageFactory.getConnection(manage.getentityManagerFactory().createEntityManager()),"/reportes/idividual.jasper",parameters);
+    Resouces.imprimirReeporte(ManageFactory.getConnection(manage.getentityManagerFactory().createEntityManager()),"/reportes/individual.jasper",parameters);
     }else{
     Resouces.warning("Atencio!!","De seleccionar una persona");
     
     }
-}   
+} 
+    
 }
