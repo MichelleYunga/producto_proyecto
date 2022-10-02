@@ -23,6 +23,22 @@ public class viewPersonas extends javax.swing.JInternalFrame {
         initComponents();
     }
 
+    public JButton getBtnreporteGen() {
+        return btnreporteGen;
+    }
+
+    public void setBtnreporteGen(JButton btnreporteGen) {
+        this.btnreporteGen = btnreporteGen;
+    }
+
+    public JButton getBtnreporteIn() {
+        return btnreporteIn;
+    }
+
+    public void setBtnreporteIn(JButton btnreporteIn) {
+        this.btnreporteIn = btnreporteIn;
+    }
+
     public JButton getBtnCrear() {
         return btnCrear;
     }
@@ -189,6 +205,8 @@ public class viewPersonas extends javax.swing.JInternalFrame {
         btnLimpiarB = new javax.swing.JButton();
         criterio = new javax.swing.JCheckBox();
         jLabel10 = new javax.swing.JLabel();
+        btnreporteGen = new javax.swing.JButton();
+        btnreporteIn = new javax.swing.JButton();
 
         setClosable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -198,60 +216,48 @@ public class viewPersonas extends javax.swing.JInternalFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PERSONA", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Monospaced", 1, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PERSONA", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Monospaced", 1, 14))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("APELLIDO");
 
         jLabel2.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("NOMBRE");
 
         jLabel3.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("CEDULA");
 
         jLabel4.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("CORREO");
 
         jLabel5.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("CELULAR");
 
         jLabel6.setFont(new java.awt.Font("Rockwell", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("DIRECCIÓN");
 
         txtapellido.setBackground(new java.awt.Color(204, 204, 255));
         txtapellido.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 12)); // NOI18N
-        txtapellido.setForeground(new java.awt.Color(0, 0, 0));
         txtapellido.setBorder(null);
 
         txtcedula.setBackground(new java.awt.Color(204, 204, 255));
         txtcedula.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 12)); // NOI18N
-        txtcedula.setForeground(new java.awt.Color(0, 0, 0));
         txtcedula.setBorder(null);
 
         txtcorreo.setBackground(new java.awt.Color(204, 204, 255));
         txtcorreo.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 12)); // NOI18N
-        txtcorreo.setForeground(new java.awt.Color(0, 0, 0));
         txtcorreo.setBorder(null);
 
         txtnombre.setBackground(new java.awt.Color(204, 204, 255));
         txtnombre.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 12)); // NOI18N
-        txtnombre.setForeground(new java.awt.Color(0, 0, 0));
         txtnombre.setBorder(null);
 
         txtdireccion.setBackground(new java.awt.Color(204, 204, 255));
         txtdireccion.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 12)); // NOI18N
-        txtdireccion.setForeground(new java.awt.Color(0, 0, 0));
         txtdireccion.setBorder(null);
 
         txtcelular.setBackground(new java.awt.Color(204, 204, 255));
         txtcelular.setFont(new java.awt.Font("Berlin Sans FB Demi", 0, 12)); // NOI18N
-        txtcelular.setForeground(new java.awt.Color(0, 0, 0));
         txtcelular.setBorder(null);
 
         btnCrear.setBackground(new java.awt.Color(0, 0, 0));
@@ -383,13 +389,10 @@ public class viewPersonas extends javax.swing.JInternalFrame {
         jScrollPane2.setViewportView(tablePersona);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("BÚSQUEDA DE PERSONAS");
 
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("OPCIONES DE BÚSQUEDA");
 
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("Criterio");
 
         txtbuscar.setBackground(new java.awt.Color(204, 204, 255));
@@ -400,22 +403,20 @@ public class viewPersonas extends javax.swing.JInternalFrame {
         btnLimpiarB.setText("LIMPIAR");
 
         criterio.setBackground(new java.awt.Color(204, 204, 255));
-        criterio.setForeground(new java.awt.Color(0, 0, 0));
         criterio.setText("Mostrar todo");
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("LISTA DE PERSONAS");
+
+        btnreporteGen.setText("REPORTE GENERAL");
+
+        btnreporteIn.setText("REPORTE INDIVIDUAL");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane2)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(222, 222, 222))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -423,7 +424,7 @@ public class viewPersonas extends javax.swing.JInternalFrame {
                         .addComponent(txtbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnBuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnLimpiarB)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(criterio))
@@ -434,6 +435,18 @@ public class viewPersonas extends javax.swing.JInternalFrame {
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(333, 333, 333)
+                        .addComponent(btnreporteIn, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnreporteGen, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(24, 24, 24))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -450,11 +463,15 @@ public class viewPersonas extends javax.swing.JInternalFrame {
                     .addComponent(btnBuscar)
                     .addComponent(btnLimpiarB)
                     .addComponent(criterio))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnreporteGen, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(btnreporteIn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -490,9 +507,9 @@ public class viewPersonas extends javax.swing.JInternalFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(0, 26, Short.MAX_VALUE)
+                .addGap(0, 28, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         pack();
@@ -506,6 +523,8 @@ public class viewPersonas extends javax.swing.JInternalFrame {
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnLimpiar;
     public javax.swing.JButton btnLimpiarB;
+    private javax.swing.JButton btnreporteGen;
+    private javax.swing.JButton btnreporteIn;
     public javax.swing.JCheckBox criterio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

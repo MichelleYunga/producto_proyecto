@@ -1,6 +1,8 @@
 package controlador;
 
 import java.awt.Dimension;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JDesktopPane;
@@ -188,4 +190,21 @@ public class ControllerPersona {
         modelotabla.setFilas(modeloPersona.findPersonaEntities());
         modelotabla.fireTableDataChanged();
     }
+    
+     //llamar
+   public void reporteGeneral() {
+        Resouces.imprimirReeporte(ManageFactory.getConnection(manage.getentityManagerFactory().createEntityManager()), "/reportes/Persona.jasper", new HashMap());
+    }
+    
+
+     public void reporteIndividual(){
+    if(persona!=null){
+    Map parameters =new  HashMap ();
+    parameters.put("id",persona.getIdpersona());
+    Resouces.imprimirReeporte(ManageFactory.getConnection(manage.getentityManagerFactory().createEntityManager()),"/reportes/idividual.jasper",parameters);
+    }else{
+    Resouces.warning("Atencio!!","De seleccionar una persona");
+    
+    }
+}   
 }

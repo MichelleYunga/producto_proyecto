@@ -25,6 +25,22 @@ public class viewUsuario extends javax.swing.JInternalFrame {
         initComponents();
     }
 
+    public JButton getBtnreporteGenUS() {
+        return btnreporteGenUS;
+    }
+
+    public void setBtnreporteGenUS(JButton btnreporteGenUS) {
+        this.btnreporteGenUS = btnreporteGenUS;
+    }
+
+    public JButton getBtnreporteInpUS() {
+        return btnreporteInpUS;
+    }
+
+    public void setBtnreporteInpUS(JButton btnreporteInpUS) {
+        this.btnreporteInpUS = btnreporteInpUS;
+    }
+
     public JButton getBtnBuscar() {
         return btnBuscar;
     }
@@ -154,6 +170,8 @@ public class viewUsuario extends javax.swing.JInternalFrame {
         btnLimpiarBU = new javax.swing.JButton();
         criterioU = new javax.swing.JCheckBox();
         jLabel10 = new javax.swing.JLabel();
+        btnreporteGenUS = new javax.swing.JButton();
+        btnreporteInpUS = new javax.swing.JButton();
 
         setClosable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -308,15 +326,15 @@ public class viewUsuario extends javax.swing.JInternalFrame {
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("LISTA DE USUARIOS");
 
+        btnreporteGenUS.setText("REPORTE GENERAL");
+
+        btnreporteInpUS.setText("REPORTE INDIVIDUAL");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane2)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(222, 222, 222))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -335,6 +353,17 @@ public class viewUsuario extends javax.swing.JInternalFrame {
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(222, 222, 222))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnreporteInpUS, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnreporteGenUS, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(98, 98, 98))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -355,7 +384,11 @@ public class viewUsuario extends javax.swing.JInternalFrame {
                 .addComponent(jLabel10)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnreporteGenUS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnreporteInpUS, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -389,6 +422,8 @@ public class viewUsuario extends javax.swing.JInternalFrame {
     public javax.swing.JButton btnEliminarU;
     public javax.swing.JButton btnLimpiarBU;
     public javax.swing.JButton btnLimpiarFU;
+    private javax.swing.JButton btnreporteGenUS;
+    private javax.swing.JButton btnreporteInpUS;
     public javax.swing.JComboBox<String> cmbPersona;
     public javax.swing.JCheckBox criterioU;
     private javax.swing.JLabel jLabel1;

@@ -23,6 +23,22 @@ public class viewProductos extends javax.swing.JInternalFrame {
         initComponents();
     }
 
+    public JButton getBtnreporteGenPRO() {
+        return btnreporteGenPRO;
+    }
+
+    public void setBtnreporteGenPRO(JButton btnreporteGenPRO) {
+        this.btnreporteGenPRO = btnreporteGenPRO;
+    }
+
+    public JButton getBtnreporteInpRO() {
+        return btnreporteInpRO;
+    }
+
+    public void setBtnreporteInpRO(JButton btnreporteInpRO) {
+        this.btnreporteInpRO = btnreporteInpRO;
+    }
+
     public JButton getBtnBuscar() {
         return btnBuscar;
     }
@@ -156,6 +172,8 @@ public class viewProductos extends javax.swing.JInternalFrame {
         btnLimpiarBP = new javax.swing.JButton();
         criterio = new javax.swing.JCheckBox();
         jLabel10 = new javax.swing.JLabel();
+        btnreporteGenPRO = new javax.swing.JButton();
+        btnreporteInpRO = new javax.swing.JButton();
 
         setClosable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.HIDE_ON_CLOSE);
@@ -311,15 +329,15 @@ public class viewProductos extends javax.swing.JInternalFrame {
         jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("LISTA DE PRODUCTOS");
 
+        btnreporteGenPRO.setText("REPORTE GENERAL");
+
+        btnreporteInpRO.setText("REPORTE INDIVIDUAL");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane2)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(222, 222, 222))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -338,6 +356,17 @@ public class viewProductos extends javax.swing.JInternalFrame {
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel7)
+                        .addGap(222, 222, 222))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnreporteInpRO, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnreporteGenPRO, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,7 +387,11 @@ public class viewProductos extends javax.swing.JInternalFrame {
                 .addComponent(jLabel10)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnreporteGenPRO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnreporteInpRO, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -392,6 +425,8 @@ public class viewProductos extends javax.swing.JInternalFrame {
     public javax.swing.JButton btnEliminarP;
     public javax.swing.JButton btnLimpiar;
     public javax.swing.JButton btnLimpiarBP;
+    private javax.swing.JButton btnreporteGenPRO;
+    private javax.swing.JButton btnreporteInpRO;
     public javax.swing.JCheckBox criterio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

@@ -6,6 +6,8 @@
 package controlador;
 
 import java.awt.Dimension;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -203,7 +205,24 @@ public class ControllerUsuario {
             System.out.println("ERROR");
         }
     }
+    //llamar
+   public void reporteGeneral() {
+        Resouces.imprimirReeporte(ManageFactory.getConnection(manage.getentityManagerFactory().createEntityManager()), "/reportes/Usuario.jasper", new HashMap());
+    }
+    
 
+     public void reporteIndividual(){
+    if(usuario!=null){
+    Map parameters =new  HashMap ();
+    parameters.put("id",usuario.getIdusuario());
+    Resouces.imprimirReeporte(ManageFactory.getConnection(manage.getentityManagerFactory().createEntityManager()),"/reportes/individualU.jasper",parameters);
+    }else{
+    Resouces.warning("Atencio!!","De seleccionar una persona");
+    
+    }
+}   
+     
 }
+
 
 
